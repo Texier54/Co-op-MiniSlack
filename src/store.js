@@ -13,6 +13,9 @@ export default new Vuex.Store({
 		setMember(state,member) {
 			state.member = member;
 		},
+		setListeMember(state,liste) {
+			state.listemember = liste;
+		},
 		setToken(state,token) {
 			state.token = token;
 		},

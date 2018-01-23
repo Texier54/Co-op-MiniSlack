@@ -2,8 +2,6 @@
 
 <div class="panel-block">
 
-  <a href="" class="">
-
     <router-link :to="{ name:'messages', params : { id : conv._id } }">
       <b>{{ conv.label }}</b>
     </router-link>
@@ -12,17 +10,19 @@
       {{ conv.topic }}
     </span>
 
-    <router-link :to="{ name:'conversation-modification', params : { id : conv._id } }">
-      Modifier
-    </router-link>
+    <span class="panel-icon">
+      <router-link :to="{ name:'conversation-modification', params : { id : conv._id } }">
+        <i class="icon-edit"></i>
+      </router-link>
+    </span>
 
-    <a>
-      <i class="icon-trash"> </i> </span>
-    </a>
+    <span class="panel-icon">
+      <a @click="suprConv">
+        <i class="icon-trash"> </i>
+      </a>
+    </span>
 
-  </a>
-
-  </div> 
+  </div>
 
 </template>
 
@@ -35,6 +35,14 @@ export default {
     return {
     }
   },
+  methods : {
+    suprConv() {
+
+        window.axios.delete('channels/'+this.conv._id);
+        window.bus.$emit('updateConv');
+    }
+  }
+
 
 }
 </script>

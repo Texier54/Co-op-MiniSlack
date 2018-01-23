@@ -14,7 +14,13 @@
     {{ memb.email }}
   </span>
 
-</div> 
+  <span class="panel-icon">
+    <a @click="suprMember">
+      <i class="icon-trash"> </i>
+    </a>
+  </span>
+
+</div>
 
 </template>
 
@@ -33,6 +39,13 @@ export default {
   mounted () {
     this.result = 'https://www.gravatar.com/avatar/'+md5(this.memb.email)+'?d=https://api.adorable.io/avatars/285/abott@adorable.png';
   },
+  methods : {
+    suprMember() {
+
+        window.axios.delete('members/'+this.memb._id);
+        window.bus.$emit('updateMember');
+    }
+  }
 
 }
 </script>

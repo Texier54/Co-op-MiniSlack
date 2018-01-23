@@ -14,7 +14,7 @@
           </div>
 
           <div class="control">
-            <input v-model="message" class="input" type="text">
+            <input @keyup.enter="envoyer" v-model="message" class="input" type="text">
             <button class="button" @click="envoyer">Envoyer</button>
           </div>
 
@@ -32,7 +32,7 @@ import NavBar from './navBar.vue'
 import Message from './message.vue'
 
 export default {
-  name: 'MessagesListe', 
+  name: 'MessagesListe',
   components: {NavBar, Message},
   data () {
     return {
@@ -65,9 +65,8 @@ export default {
         alert(error);
 
       });
-      
+
     }
   }
 }
 </script>
-

@@ -26,7 +26,7 @@ import NavBar from './navBar.vue'
 import Member from './member.vue'
 
 export default {
-  name: 'MembersListe', 
+  name: 'MembersListe',
   components: {NavBar, Member},
   data () {
     return {
@@ -39,7 +39,14 @@ export default {
       this.liste = response.data;
     }).catch((error) => {
     });
+
+    window.bus.$on('updateMember',() => {
+      window.axios.get('members').then((response) => {
+        this.liste = response.data;
+      }).catch((error) => {
+      });
+    });
+
   }
 }
 </script>
-

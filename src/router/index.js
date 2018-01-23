@@ -21,13 +21,17 @@ export default new Router({
       component: MembreCreation
     },
     {
+      path: '/',
+      component: ConversationsListe
+    },
+    {
       path: '/conversations',
       component: ConversationsListe
-    }, 
+    },
     {
       path: '/newConv',
       component: newConv
-    }, 
+    },
     {
       name: 'conversation-modification',
       path: '/conversation-modification/:id',
@@ -41,6 +45,6 @@ export default new Router({
       name: 'messages',
       path: '/messages/:id',
       component: Messages
-    }, 
+    },
   ]
 })

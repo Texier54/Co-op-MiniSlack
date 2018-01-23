@@ -44,8 +44,6 @@ export default {
 
       }).then((response) => {
 
-        console.log(response.data);
-        alert('Le membre '+response.data.label+' a été créé. Vous pouvez vous connecter');
         this.$router.push({path: '/conversations'});
 
       }).catch((error) => {
@@ -53,9 +51,8 @@ export default {
         alert(error.response.data.error.join("\n"));
 
       });
-      
+
     }
   }
 }
 </script>
-

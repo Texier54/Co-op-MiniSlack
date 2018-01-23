@@ -64,14 +64,14 @@ export default {
 
         window.axios.defaults.params.token = response.data.token;
 
-        this.$router.push({path: '/conversations'});
+        this.$router.push({path: '/'});
 
       }).catch((error) => {
 
         alert(error.response.data.error.join("\n"));
 
       });
-      
+
     }
   }
 }

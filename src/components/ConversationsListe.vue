@@ -31,7 +31,7 @@ import NavBar from './navBar.vue'
 import Conversation from './conversation.vue'
 
 export default {
-  name: 'ConversationsListe', 
+  name: 'ConversationsListe',
   components: {NavBar, Conversation},
   data () {
     return {
@@ -43,7 +43,14 @@ export default {
       this.liste = response.data;
     }).catch((error) => {
     });
+
+    window.bus.$on('updateConv',() => {
+      window.axios.get('channels').then((response) => {
+        this.liste = response.data;
+      }).catch((error) => {
+      });
+    });
+
   }
 }
 </script>
-
