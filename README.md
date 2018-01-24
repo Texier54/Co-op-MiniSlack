@@ -1,6 +1,6 @@
 # Co-op-MiniSlack
 
- Co'op, un clone de Slack en VueJS
+ Co'op, un clone de Slack en VueJS, repose sur une API.
 
 ## Build Setup
 
