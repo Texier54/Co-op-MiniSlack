@@ -1,6 +1,6 @@
 # Co-op-MiniSlack
 
-> A Vue.js project
+ Co'op, un clone de Slack en VueJS
 
 ## Build Setup
 
@@ -18,8 +18,11 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+## Fait avec
+
+* [VueJS](https://vuejs.org/) - Framework JavaScript
+* [Bulma](https://bulma.io/) - Framework CSS
 
 ## Autheurs
 
