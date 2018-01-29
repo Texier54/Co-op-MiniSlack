@@ -8,18 +8,16 @@
       <form @submit="modifConversation">
 
         <div class="field">
-          <input type="text" v-model="label" placeholder="Nom">
+          <input class="input" type="text" v-model="label" placeholder="Nom">
         </div>
 
         <div class="field">
-          <input type="text" v-model="topic" placeholder="Description">
+          <input class="input" type="text" v-model="topic" placeholder="Description">
         </div>
 
-        <div>
-          <input class="button is-link" type="submit" value="Modifier">
-        </div>
+        <input class="button is-primary" type="submit" value="Modifier">
 
-        <router-link class="button is-text" to="/conversations">Annuler</router-link>
+        <router-link class="button is-text" to="/conversations"><i class="icon-remove">&nbsp;</i>Annuler</router-link>
 
       </form>
     </section>
@@ -58,9 +56,8 @@ export default {
         alert(error);
 
       });
-      
+
     }
   }
 }
 </script>
-

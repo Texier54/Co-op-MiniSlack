@@ -16,8 +16,8 @@
         </div>
 
         <input class="button is-primary" type="submit" value="Créer conversation">
-        
-        <router-link class="button is-text" to="/conversations"><i class="icon-remove">&nbsp;Annuler</i></router-link>
+
+        <router-link class="button is-text" to="/conversations"><i class="icon-remove">&nbsp;</i>Annuler</router-link>
 
       </form>
     </section>
