@@ -8,18 +8,16 @@
       <form @submit="creerConversation">
 
         <div class="field">
-          <input type="text" v-model="label" placeholder="Nom">
+          <input class="input" type="text" v-model="label" placeholder="Nom">
         </div>
 
         <div class="field">
-          <input type="text" v-model="topic" placeholder="Description">
+          <input class="input" type="text" v-model="topic" placeholder="Description">
         </div>
 
-        <div>
-          <input class="button is-link" type="submit" value="Créer conversation">
-        </div>
-
-        <router-link class="button is-text" to="/conversations">Annuler</router-link>
+        <input class="button is-primary" type="submit" value="Créer conversation">
+        
+        <router-link class="button is-text" to="/conversations"><i class="icon-remove">&nbsp;Annuler</i></router-link>
 
       </form>
     </section>

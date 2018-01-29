@@ -1,6 +1,6 @@
-# coop
+# Co-op-MiniSlack
 
-> A Vue.js project
+ Co'op, un clone de Slack en VueJS, repose sur une API.
 
 ## Build Setup
 
@@ -18,5 +18,17 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-# Co-op-MiniSlack
+
+## Fait avec
+
+* [VueJS](https://vuejs.org/) - Framework JavaScript
+* [Bulma](https://bulma.io/) - Framework CSS
+
+## Autheurs
+
+* **Baptiste Texier** - *Lancement* - [Github](https://github.com/texier54)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
