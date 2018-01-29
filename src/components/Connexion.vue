@@ -19,9 +19,7 @@
 
         <div class="field">
 
-          <div>
-            <input type="submit" class="button is-success" value="Connexion">
-          </div>
+          <input type="submit" class="button is-primary" value="Connexion">
 
           <router-link class="button is-text" to="/membre-creation">Créer un compte</router-link>
 

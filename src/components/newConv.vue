@@ -15,10 +15,8 @@
           <input type="text" v-model="topic" placeholder="Description">
         </div>
 
-        <div>
-          <input class="button is-link" type="submit" value="Créer conversation">
-        </div>
-
+        <input class="button is-primary" type="submit" value="Créer conversation">
+        
         <router-link class="button is-text" to="/conversations">Annuler</router-link>
 
       </form>

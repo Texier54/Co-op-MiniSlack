@@ -2,9 +2,13 @@
 
 <div class="panel-block">
 
-    <router-link :to="{ name:'messages', params : { id : conv._id } }">
-      <b>{{ conv.label }}</b>
-    </router-link>
+    <span>
+      <b>
+      <router-link :to="{ name:'messages', params : { id : conv._id } }">
+        {{ conv.label }}
+      </router-link>
+      </b>
+    </span>
 
     <span class="tag">
       {{ conv.topic }}
@@ -37,9 +41,11 @@ export default {
   },
   methods : {
     suprConv() {
-
-        window.axios.delete('channels/'+this.conv._id);
-        window.bus.$emit('updateConv');
+        if(confirm("Voulez vous supprimer la conversation ?"))
+        {
+          window.axios.delete('channels/'+this.conv._id);
+          window.bus.$emit('updateConv');
+        }
     }
   }
 

@@ -8,16 +8,11 @@
   </div>
 
   <div class="navbar-item">
-    <a href="#/conversations" class="navbar-item router-link-exact-active router-link-active is-active">
-      <i class="fa fa-comment"></i>
-      Conversations
-    </a>
+    <router-link class="navbar-item" to="/conversations">Conversations</router-link>
   </div>
 
   <div class="navbar-item">
-    <a href="#/members" class="navbar-item"><i class="fa fa-user"></i>
-      Membres
-    </a>
+    <router-link class="navbar-item" to="/members">Membres</router-link>
   </div>
 
   <div class="navbar-end">
@@ -48,3 +43,10 @@ export default {
 
 }
 </script>
+
+<style>
+.router-link-exact-active {
+  background-color:#fff;
+  color: #1abc9c;
+}
+</style>

@@ -46,5 +46,6 @@ export default new Router({
       path: '/messages/:id',
       component: Messages
     },
+    { path: '*', component: ConversationsListe}
   ]
 })

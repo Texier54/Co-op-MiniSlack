@@ -5,7 +5,7 @@
     <nav-bar></nav-bar>
 
     <section class="section coop-accueil">
-    <br><br>
+
           <div class="panel">
 
           <p class="panel-heading">
