@@ -23,22 +23,21 @@
     </nav>
 
     <section class="section coop-accueil">
-        <div class="channel">
+      <div class="channel">
 
-          <div class="panel">
-            <message v-for="unMessage in liste" :mess="unMessage"></message>
-
-          </div>
+        <div class="panel">
+          <message v-for="unMessage in liste" :mess="unMessage"></message>
 
         </div>
 
-    </section>
+      </div>
+      
+      <section id="pagination" class="navigation is-fixed-bottom">
+        <hr>
+        <input @keyup.enter="envoyer" v-model="message" class="input is-medium" placeholder="Entrez votre message et appuyez sur entrée" type="text">
+      </section>
 
-    <section id="pagination" class="navigation is-fixed-bottom">
-      <input @keyup.enter="envoyer" v-model="message" class="input is-medium" type="text">
-      <button class="button" @click="envoyer">Envoyer</button>
     </section>
-
   </div>
 
 </template>
