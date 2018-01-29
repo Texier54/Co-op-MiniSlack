@@ -8,11 +8,11 @@
     </p>
   </figure>
 
-  <b>{{ memb.fullname }}</b>
+  <b>{{ memb.fullname }}</b>&nbsp;&nbsp;
 
   <span class="tag">
     {{ memb.email }}
-  </span>
+  </span>&nbsp;&nbsp;
 
   <span v-if="ok" class="panel-icon">
     <a @click="suprMember">

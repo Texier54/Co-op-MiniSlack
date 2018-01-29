@@ -2,17 +2,15 @@
 
 <div class="panel-block">
 
-    <span>
       <b>
       <router-link :to="{ name:'messages', params : { id : conv._id } }">
         {{ conv.label }}
       </router-link>
-      </b>
-    </span>
+      </b>&nbsp;&nbsp;
 
     <span class="tag">
       {{ conv.topic }}
-    </span>
+    </span>&nbsp;&nbsp;&nbsp;
 
     <span class="panel-icon">
       <router-link :to="{ name:'conversation-modification', params : { id : conv._id } }">

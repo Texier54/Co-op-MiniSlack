@@ -10,7 +10,7 @@
 
           <p class="panel-heading">
             Conversations
-            <a class="button is-small" href="#/newConv"><span class="icon"><i class="fa fa-plus"></i></span>
+            <a class="button" href="#/newConv"><span class="icon"><i class="icon-comment"></i></span>
               <span>
                 Nouvelle conversation
               </span>
