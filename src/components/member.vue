@@ -47,8 +47,9 @@ export default {
     suprMember() {
       if(confirm("Voulez vous supprimer le membre ?"))
       {
-        window.axios.delete('members/'+this.memb._id);
-        window.bus.$emit('updateMember');
+        window.axios.delete('members/'+this.memb._id).then((response) => {
+          window.bus.$emit('updateMember');
+        });
       }
     }
   }

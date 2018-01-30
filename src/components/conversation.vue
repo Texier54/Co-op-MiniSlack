@@ -41,8 +41,9 @@ export default {
     suprConv() {
         if(confirm("Voulez vous supprimer la conversation ?"))
         {
-          window.axios.delete('channels/'+this.conv._id);
-          window.bus.$emit('updateConv');
+          window.axios.delete('channels/'+this.conv._id).then((response) => {
+            window.bus.$emit('updateConv');
+          });
         }
     }
   }
