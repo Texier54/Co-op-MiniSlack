@@ -1,20 +1,20 @@
 # Co-op-MiniSlack
 
- Co'op, un clone de Slack en VueJS, repose sur une API.
+ Co'op, un clone de Slack en VueJS, repose sur une API Rest.
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# Installer les dépendances
 npm install
 
-# serve with hot reload at localhost:8080
+# Lancer en localhost:8080
 npm run dev
 
-# build for production with minification
+# Build pour production
 npm run build
 
-# build for production and view the bundle analyzer report
+# Build pour production view the bundle analyzer report
 npm run build --report
 ```
 
