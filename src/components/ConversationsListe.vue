@@ -4,21 +4,27 @@
 
     <nav-bar></nav-bar>
 
-    <section class="section coop-accueil">
+    <section class="container section coop-accueil">
+
+      <div class="columns">
+        <div class="column is-12">
 
           <div class="panel">
 
-          <p class="panel-heading">
-            Conversations
-            <a class="button" href="#/newConv"><span class="icon"><i class="icon-comment"></i></span>
-              <span>
-                Nouvelle conversation
-              </span>
-            </a>
-          </p>
+            <p class="panel-heading">
+              Conversations
+              <a class="button" href="#/newConv"><span class="icon"><i class="icon-comment"></i></span>
+                <span>
+                  Nouvelle conversation
+                </span>
+              </a>
+            </p>
 
-          <conversation v-for="uneConv in liste" :conv="uneConv"></conversation>
+            <conversation v-for="uneConv in liste" :conv="uneConv"></conversation>
+          </div>
         </div>
+      </div>
+
     </section>
 
   </div>

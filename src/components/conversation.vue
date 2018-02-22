@@ -44,6 +44,7 @@ export default {
           window.axios.delete('channels/'+this.conv._id).then((response) => {
             window.bus.$emit('updateConv');
           });
+          
         }
     }
   }

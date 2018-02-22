@@ -3,29 +3,34 @@
   <div class="modal-card">
     <header class="modal-card-head"><p class="modal-card-title">Co'op - Identification</p></header>
 
-    <section class="modal-card-body">
+    <section class="container modal-card-body">
 
-      <form @submit="seConnecter">
+      <div class="columns">
+        <div class="column is-5">
+          <form @submit="seConnecter">
 
-        <label class="label">Email</label>
-        <div class="field">
-          <input class="input" v-model="email" type="text" placeholder="Email">
+            <label class="label">Email</label>
+            <div class="field">
+              <input class="input" v-model="email" type="text" placeholder="Email">
+            </div>
+
+            <label class="label">Mot de passe</label>
+            <div class="field">
+              <input class="input" v-model="password" type="password" placeholder="Mot de passe">
+            </div>
+
+            <div class="field">
+
+              <input type="submit" class="button is-primary" value="Connexion">
+
+              <router-link class="button is-text" to="/membre-creation">Créer un compte</router-link>
+
+            </div>
+
+          </form>
+
         </div>
-
-        <label class="label">Mot de passe</label>
-        <div class="field">
-          <input class="input" v-model="password" type="password" placeholder="Mot de passe">
-        </div>
-
-        <div class="field">
-
-          <input type="submit" class="button is-primary" value="Connexion">
-
-          <router-link class="button is-text" to="/membre-creation">Créer un compte</router-link>
-
-        </div>
-
-      </form>
+      </div>
 
     </section>
 

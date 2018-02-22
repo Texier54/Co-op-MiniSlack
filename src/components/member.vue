@@ -50,6 +50,7 @@ export default {
         window.axios.delete('members/'+this.memb._id).then((response) => {
           window.bus.$emit('updateMember');
         });
+        
       }
     }
   }
